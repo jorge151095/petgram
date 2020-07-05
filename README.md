@@ -1,5 +1,11 @@
-# curso-platzi-react-avanzado ⚛️
+# React advance course Petgram ⚛️
 
-¡Sígueme en Youtube! https://www.youtube.com/midudev
+React Js Petgram project
 
-Repositorio con el código del [Curso Avanzado de React de Platzi](https://platzi.com/cursos/react-avanzado/)
+### Docs:
+
+https://maketext.io/ Create logo in svg
+
+https://jakearchibald.github.io/svgomg/ Optimize svg logo
+
+https://react-svgr.com/playground/ Convert svg to react component
