@@ -32,4 +32,5 @@ export const Button = styled.button`
 
 export const Article = styled.article`
   padding-bottom: 15px;
+  min-height: 200px;
 `
