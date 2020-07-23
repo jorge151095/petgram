@@ -3,8 +3,13 @@ import React from 'react'
 import { Router } from '@reach/router'
 import { GlobalStyle } from './styles/globalStyles'
 import { Logo } from './components/logo'
-import { Home } from './pages/Home'
+import { Home } from './pages/home'
 import { Detail } from './pages/detail'
+import { NavBar } from './components/navbar'
+import { Favs } from './pages/favs'
+import { User } from './pages/user'
+import { NotRegisteredUser } from './pages/notRegisteredUser'
+import Context from './context'
 
 export const App = () => {
   return (
@@ -16,6 +21,21 @@ export const App = () => {
         <Home path='/pet/:categoryId' />
         <Detail path='/detail/:detailId' />
       </Router>
+      <Context.Consumer>
+        {
+          ({ isAuth }) =>
+            isAuth
+              ? <Router>
+                <Favs path='/favs' />
+                <User path='/user' />
+              </Router>
+              : <Router>
+                <NotRegisteredUser path='/favs' />
+                <NotRegisteredUser path='/user' />
+              </Router>
+        }
+      </Context.Consumer>
+      <NavBar />
     </div>
   )
 }
