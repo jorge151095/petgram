@@ -27,7 +27,7 @@ function useCategoriesData () {
   return { categories, onLoaderFinished, loadingBarProgress }
 }
 
-export const ListOfCategories = () => {
+const ListOfCategoriesComponent = () => {
   const { categories, onLoaderFinished, loadingBarProgress } = useCategoriesData()
   const [showFixed, setShowFixed] = useState()
 
@@ -66,3 +66,5 @@ export const ListOfCategories = () => {
     </>
   )
 }
+
+export const ListOfCategories = React.memo(ListOfCategoriesComponent)

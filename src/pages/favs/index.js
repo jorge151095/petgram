@@ -1,10 +1,9 @@
 import React from 'react'
 import { FavsWithQuery } from '../../container/getFavorites'
-import { Layout, Title } from './styles'
+import { Layout } from './../../components/layout'
 
-export const Favs = () => (
-  <Layout>
-    <Title>Favs</Title>
+export default () => (
+  <Layout title='Favorites'>
     <FavsWithQuery />
   </Layout>
 )
