@@ -10,8 +10,17 @@ export const Layout = styled.div`
 
 export const Title = styled.h1`
   padding: 20px 0;
-  font-size: 24px;
-  font-weight: 600px;
-  color: #222;
-  padding-bottom: 8px;
+`
+
+export const Label = styled.p`
+  color: black;
+  font-size: 14px;
+  padding: 0 20px;
+  text-align: center;
+`
+
+export const Link = styled.button`
+  color: #bb0000;
+  font-weight: bold;
+  padding: 0 7px;
 `

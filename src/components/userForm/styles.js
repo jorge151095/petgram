@@ -11,12 +11,14 @@ export const Layout = styled.div`
 export const Form = styled.form`
   padding: 16px 0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 export const Input = styled.input`
   border: 1px solid #ccc;
-  border-radius: 3px;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   padding: 8px 4px;
   display: block;
   width: 100%;
@@ -29,5 +31,5 @@ export const Input = styled.input`
 export const Title = styled.h2`
   font-size: 22px;
   font-weight: 500;
-  padding: 8px 0;
+  padding-top: 8px;
 `

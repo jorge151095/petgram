@@ -8,7 +8,7 @@ import { Detail } from './pages/detail'
 import { NavBar } from './components/navbar'
 import { User } from './pages/user/index'
 import { NotFound } from './pages/notFound'
-import { NotRegisteredUser } from './pages/notRegisteredUser'
+import { NotRegisteredUser } from './pages/notRegisteredUser/index'
 import { Context } from './context'
 
 const Favs = React.lazy( () => import('./pages/favs/index'))
