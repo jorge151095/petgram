@@ -1,6 +1,6 @@
 # React advance course Petgram ⚛️
 
-React Js Petgram project
+React Js Petgram project.
 
 ### Docs:
 
